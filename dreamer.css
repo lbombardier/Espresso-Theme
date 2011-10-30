@@ -1,0 +1,273 @@
+@base {
+	color: #000000;
+	background-color: #FFFFFF;
+	insertion-point-color: #000000;
+	selection-background-color: default;
+	font-family: "Courier New", Courier, mono;
+	font-style: normal;
+	font-weight: normal;
+}
+
+/*-- Lucas Changes -- */
+
+/*-- html --*/
+
+tag.doctype.html, 
+tag.doctype.html punctuation.definition.begin,
+tag.doctype.html punctuation.definition.end,
+tag.open.block.html,
+tag.close.block.html,
+tag.open.self-closing.html {
+	color: #009;
+}
+
+tag.open.block.html attribute-value,
+tag.open.self-closing.html attribute-value {
+	color: #00F;
+}
+
+comment.block.html, 
+comment.block.html punctuation {
+	color: #888888;
+	font-style: normal;
+}
+
+tag:has-child(entity.name[text='form']) { color: #cc6600; }
+entity.name.form { color: #cc6600; }
+
+/*-- php --*/
+
+embedded.language-root.php delimiter.source.start,
+embedded.language-root.php delimiter.source.start keyword.definition,
+embedded.language-root.php constant.numeric.integer {
+	color: red;
+	font-weight:normal;
+}
+
+embedded.language-root.php operator.comparison.binary,
+embedded.language-root.php punctuation.brace {
+	color: #009;
+	font-weight:normal;
+}
+
+embedded.language-root.php variable,
+embedded.language-root.php variable punctuation.dollar {
+	color:#000;
+	font-weight: normal;
+}
+
+embedded.language-root.php function.definition keyword.control,
+embedded.language-root.php variable.function,
+embedded.language-root.php operator.assignment,
+embedded.language-root.php operator.concatenation.binary {
+	color: #00F;
+	font-weight:normal;
+}
+
+embedded.language-root.php string.quoted{
+	color:#C00;
+	font-weight:normal;
+}
+
+embedded.language-root.php function.definition name,
+embedded.language-root.php keyword.control,
+embedded.language-root.php keyword.language.function {
+	color: #060;
+	font-weight: normal;
+}
+
+embedded.language-root.php comment.line,
+embedded.language-root.php comment.block,
+embedded.language-root.php comment.line punctuation.definition.begin,
+embedded.language-root.php comment.block punctuation.definition {
+	color: #F90;
+	font-weight:normal;
+}
+
+/* -- css -- */
+embedded-javascript.html,
+embedded-style.html {
+	color:#909;
+}
+embedded.language-root.css selector.css,
+language-root.css selector.css,
+embedded.language-root.css property-list.block.css,
+language-root.css property-list.block.css,
+embedded.language-root.css property-list.block.css property-value punctuation,
+language-root.css property-list.block.css property-value punctuation {
+	color: #F0F;
+}
+
+language-root.css property-list.block.css property-name,
+embedded.language-root.css property-list.block.css property-name {
+	color: #009;
+}
+
+language-root.css property-list.block.css property-value,
+embedded.language-root.css property-list.block.css property-value,
+language-root.css property-list.block.css property-value constant.other.color.rgb-value.css punctuation.definition.constant.css,
+embedded.language-root.css property-list.block.css property-value constant {
+	color: #00F;
+}
+
+comment.block.css,
+comment.block.css punctuation.definition {
+	color: #888888;
+	font-style: normal;
+}
+
+/*-- Lucas End -- */
+
+
+comment, comment>punctuation, tag.doctype, tag.doctype > *, tag.doctype > string.quoted {
+	color: #1a64fc;
+	font-style: italic;
+}
+
+keyword.control, storage.type {
+	color: #0000FF;
+	font-weight:bold;
+}
+
+constant.numeric {
+	color: #0000CD;
+}
+
+constant.language {
+    color: #585CF6;
+    font-weight:bold;
+}
+
+variable.language, variable.other {
+    color: #318495;
+}
+
+string {
+    color: #036A07;
+}
+
+constant.character.escape, string source {
+    color: #26B31A;
+}
+
+meta.preprocessor {
+    color: #1A921C;
+}
+
+keyword.control.import {
+    color: #0C450D;
+    font-weight:bold;
+}
+
+entity.name.function, support.function.any-method {
+    color: #0000A2;
+    font-weight:bold;
+}
+
+entity.name.type {
+	text-decoration: underline;
+}
+entity.other.inherited-class {
+	font-style: italic;
+}
+meta.section entity.name.section, declaration.section entity.name.section {
+	font-style: italic;
+}
+variable.parameter {
+	font-style: italic;
+}
+
+
+storage.type.method {
+	color: #70727E;
+}
+
+support.function {
+	color: #3C4C72;
+	font-weight: bold;
+}
+support.function {
+	color: #6D79DE;
+	font-weight: bold;
+}
+support.constant {
+	color: #06960E;
+	font-weight: bold;
+}
+support.variable {
+	color: #21439C;
+	font-weight: bold;
+}
+
+keyword.operator.js {
+	color: #687687;
+}
+
+invalid {
+	background-color: #f93232;
+	color: #f9f2ce;
+}
+invalid.deprecated.trailing-whitespace {
+	background-color: #FFD0D0;
+}
+
+text source, string.unquoted {
+	background-color: rgba(0,0,0,0.05);
+}
+text source string.unquoted, text source text source {
+	background-color: rgba(0,0,0,0.06);
+}
+
+meta.tag.preprocessor.xml {
+	color: #68685B;
+}
+
+meta.tag.sgml.doctype, meta.tag.sgml.doctype entity, meta.tag.sgml.doctype string, meta.tag.preprocessor.xml, meta.tag.preprocessor.xml entity, meta.tag.preprocessor.xml string {
+	color: #888888;
+}
+
+string.quoted.docinfo.doctype.DTD {
+	font-style: italic;
+}
+
+string.quoted.docinfo.doctype.DTD {
+	color: #1C02FF;
+}
+
+entity.name.tag {
+	font-weight: bold;
+}
+
+entity.other.attribute-name {
+	font-style: italic;
+}
+
+markup.heading {
+	color: #0C07FF;
+	font-weight: bold;
+}
+
+markup.quote {
+	font-style: italic;
+}
+
+markup.list {
+	color:#B90690;
+}
+
+php > delimiter,
+php > keyword,
+php > container keyword.php,
+php > variable,
+php > variable variable.begin,
+php > block name,
+php > block variable,
+php > identifier comma,
+php > function comma,
+php > container identifier.function,
+php > container function.parenthesis-delimited,
+php > container delimiter.parenthesis,
+php > literal keyword {
+	color: red;
+	font-weight: normal;
+}
